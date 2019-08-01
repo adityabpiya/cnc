@@ -1,4 +1,16 @@
 <h1>Welcome to Cars and College!</h1>
 
+<% @cars.each do |car| %>
+    <div>
+        <h3><%= car.year %></h3>
+        <h3><%= car.make %></h3>
+        <h2><%= car.model %></h2>
+        <p><%= car.mods %></p>
+        <h3><%= car.college %></h3>
+        <i><%= car.major %></i><br />
+    </div>
+
+    <hr />
+<% end %>
 
 <%= image_tag 'drg.jpg' %>
