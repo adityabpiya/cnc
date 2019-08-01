@@ -1,1 +1,13 @@
-<h1>Enter car details</h1>
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Car and College Details</h1>
+  <%= simple_form_for @car do |f| %>
+    <%= f.input :year %>
+    <%= f.input :make %>
+    <%= f.input :model %>
+    <%= f.input :mods %>
+    <%= f.input :college %>
+    <%= f.input :major %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
